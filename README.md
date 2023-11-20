@@ -4,7 +4,8 @@ This repo contains JSON strings for use with the PDF Declarations recognized by 
 
 https://pdfa.org/declarations/
 
-These strings provide standardized text for use in identifying PDF Declarations in user interfaces.
+These strings provide standardized text for use in identifying PDF Declarations in user interfaces. In each string, the key is the
+URI for a PDF Declaration and the value is the PDF Association's display string intended for use in software UIs.
 
 If you want to add a PDF Declaration to the industry index please contact declarations@pdfa.org.
 

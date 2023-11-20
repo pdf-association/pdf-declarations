@@ -7,7 +7,8 @@ https://pdfa.org/declarations/
 These strings provide standardized text for use in identifying PDF Declarations in user interfaces. In each string, the key is the
 URI for a PDF Declaration and the value is the PDF Association's display string intended for use in software UIs.
 
-If you want to add a PDF Declaration to the industry index please contact declarations@pdfa.org.
+If you want to add a PDF Declaration to the PDF Association's <a href="https://pdfa.org/declarations/">
+index</a> please contact declarations@pdfa.org.
 
 For more information about PDF Declarations please see the PDF Declarations specification at https://pdfa.org/resource/pdf-declarations/
 

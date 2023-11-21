@@ -1,1 +1,23 @@
-{"URI":"https://pdfa.org/declarations/tagged-pdf/#reuse1.0", “Display string”:"Tagged PDF specification - conformance level for Reuse"}
+{
+    "declarationsVersion":1.0,
+    "declarations":
+    [
+        {
+            "uri": "https://pdfa.org/declarations#wcag21AA",
+            "standard": "Web Content Accessibility Guidelines",
+            "version": 2.1,
+            "conformance": "Conformance Level AA",
+            "technologyReliance": "ISO 32000",
+            "externalURI": "https://pdfa.org/foo.html",
+            "mandatoryFields": "claimDate"
+        },
+        {
+            "uri": "https://pdfa.org/declarations/tagged-pdf/#reuse1.0",
+            "standard": "Usage of Tagged PDF in PDF 2.0 specification",
+            "version": 1.1,
+            "conformance": "Conformance level for Reuse",
+            "technologyReliance": "ISO 32000-2",
+            "externalURI": "https://pdfa.org/foo.html"
+        } 
+    ]
+}

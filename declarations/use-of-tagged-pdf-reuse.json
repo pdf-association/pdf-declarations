@@ -1,23 +1,133 @@
 {
-    "declarationsVersion":1.0,
+    "declarationsVersion": 1.0,
     "declarations":
     [
         {
-            "uri": "https://pdfa.org/declarations#wcag21AA",
-            "standard": "Web Content Accessibility Guidelines",
-            "version": 2.1,
-            "conformance": "Conformance Level AA",
-            "technologyReliance": "ISO 32000",
-            "externalURI": "https://pdfa.org/foo.html",
-            "mandatoryFields": "claimDate"
+            "title": "Well-Tagged PDF (WTPDF), Conformance level for reuse",
+            "description": "The author of a PDF file including this PDF Declaration is asserting that the document conforms to the conformance level for reuse in the PDF Association's specification for Well-Tagged PDF (WTPDF): Using Tagged PDF for Accessibility and Reuse in PDF 2.0.",
+            "uri": "http://pdfa.org/declarations/wtpdf#reuse1.0",
+            "recommendedFields": [	"claimBy", "claimDate" ],
+            "optionalFields": [ "claimCredentials", "claimReport" ],
+            "standard":	"Well-Tagged PDF (WTPDF): Using Tagged PDF for Accessibility and Reuse in PDF 2.0",
+            "version":	1.0,
+            "externalURI":	"https://pdfa.org/wtpdf/",
+            "level": "Conformance level for reuse",
+            "technologyReliance": [	"ISO 32000-2", "ISO/TS 32005" ]
         },
         {
-            "uri": "https://pdfa.org/declarations/tagged-pdf/#reuse1.0",
-            "standard": "Usage of Tagged PDF in PDF 2.0 specification",
-            "version": 1.1,
-            "conformance": "Conformance level for Reuse",
-            "technologyReliance": "ISO 32000-2",
-            "externalURI": "https://pdfa.org/foo.html"
-        } 
+            "title": "PDF validated as conforming to Well-Tagged PDF (WTPDF), conformance level for reuse",
+            "description": "The author of a PDF file including this PDF Declaration is asserting that the document has been validated as conforming to Well-Tagged PDF, conformance level for reuse.",
+            "uri": "http://pdfa.org/declarations/wtpdf#reuse1.0-validated",
+            "recommendedFields": [	"claimBy", "claimDate" ],
+            "optionalFields": [ "claimCredentials", "claimReport" ],
+            "standard":	"Well-Tagged PDF (WTPDF): Using Tagged PDF for Accessibility and Reuse in PDF 2.0",
+            "version":	1.0,
+            "externalURI":	"https://pdfa.org/wtpdf/",
+            "level": "Conformance level for reuse (validated)",
+            "technologyReliance": [	"ISO 32000-2", "ISO/TS 32005" ]
+        },
+        {
+            "title": "Well-Tagged PDF (WTPDF): Conformance level for accessibility",
+            "description": "The author of a PDF file including this PDF Declaration is asserting that the document conforms to the conformance level for accessibility in the PDF Association's specification for Well-Tagged PDF (WTPDF): Using Tagged PDF for Accessibility and Reuse in PDF 2.0.",
+            "uri": "http://pdfa.org/declarations/wtpdf#accessibility1.0",
+            "recommendedFields": [	"claimBy", "claimDate" ],
+            "optionalFields": [ "claimCredentials", "claimReport" ],
+            "standard":	"Well-Tagged PDF (WTPDF): Using Tagged PDF for Accessibility and Reuse in PDF 2.0",
+            "version":	1.0,
+            "externalURI":	"https://pdfa.org/wtpdf/",
+            "level": "Conformance level for accessibility",
+            "technologyReliance": [	"ISO 32000-2", "ISO/TS 32005" ]
+        },
+        {
+            "title": "WCAG 2.2 Level A",
+            "description": "The author of a PDF file including this PDF Declaration is asserting that the document conforms to the WCAG 2.2 Level A specification.",
+            "uri": "http://pdfa.org/declarations#wcag22a",
+            "recommendedFields": [	"claimBy", "claimDate" ],
+            "optionalFields": [ "claimCredentials", "claimReport" ],
+            "standard":	"Web Content Accessibility Guidelines",
+            "version":	2.2,
+            "externalURI":	"https://www.w3.org/TR/WCAG22/",
+            "level": "Conformance level A",
+            "technologyReliance": [	"ISO 32000" ]
+        },
+        {
+            "title": "WCAG 2.2 Level AA",
+            "description": "The author of a PDF file including this PDF Declaration is asserting that the document conforms to the WCAG 2.2 Level AA specification.",
+            "uri": "http://pdfa.org/declarations#wcag22aa",
+            "recommendedFields": [	"claimBy", "claimDate" ],
+            "optionalFields": [ "claimCredentials", "claimReport" ],
+            "standard":	"Web Content Accessibility Guidelines",
+            "version":	2.2,
+            "externalURI":	"https://www.w3.org/TR/WCAG22/",
+            "level": "Conformance level AA",
+            "technologyReliance": [	"ISO 32000" ]
+        },        
+        {
+            "title": "WCAG 2.2 Level AAA",
+            "description": "The author of a PDF file including this PDF Declaration is asserting that the document conforms to the WCAG 2.2 Level AAA specification.",
+            "uri": "http://pdfa.org/declarations#wcag22aaa",
+            "recommendedFields": [	"claimBy", "claimDate" ],
+            "optionalFields": [ "claimCredentials", "claimReport" ],
+            "standard":	"Web Content Accessibility Guidelines",
+            "version":	2.2,
+            "externalURI":	"https://www.w3.org/TR/WCAG22/",
+            "level": "Conformance level AAA",
+            "technologyReliance": [	"ISO 32000" ]
+        },
+        {
+            "title": "PDF validated as conforming to PDF/UA-1",
+            "description": "The author of a PDF/UA file including this PDF Declaration is asserting that the document has been validated as conforming to PDF/UA-1 (ISO 14289-1).",
+            "uri": "http://pdfa.org/declarations#pdfua1-validated",
+            "recommendedFields": [	"claimBy", "claimDate" ],
+            "optionalFields": [ "claimCredentials", "claimReport" ],
+            "standard":	"ISO 14289-1",
+            "version":	1.0,
+            "externalURI":	"https://pdfa.org/pdfua/",
+            "technologyReliance": [	"ISO 32000-1", "ISO 14289-1" ]
+        },
+        {
+            "title": "PDF validated as conforming to PDF/UA-2",
+            "description": "The author of a PDF/UA file including this PDF Declaration is asserting that the document has been validated as conforming to PDF/UA-2 (ISO 14289-2).",
+            "uri": "http://pdfa.org/declarations#pdfua2-validated",
+            "recommendedFields": [	"claimBy", "claimDate" ],
+            "optionalFields": [ "claimCredentials", "claimReport" ],
+            "standard":	"ISO 14289-2",
+            "version":	1.0,
+            "externalURI":	"https://pdfa.org/pdfua/",
+            "technologyReliance": [	"ISO 32000-2", "ISO 14289-2" ]
+        },
+        {
+            "title": "PDF validated as conforming to Well-Tagged PDF (WTPDF), conformance level for accessibility",
+            "description": "The author of a PDF file including this PDF Declaration is asserting that the document has been validated as conforming to Well-Tagged PDF (WTPDF), conformance level for accessibility.",
+            "uri": "http://pdfa.org/declarations/wtpdf#accessibility1.0-validated",
+            "recommendedFields": [	"claimBy", "claimDate" ],
+            "optionalFields": [ "claimCredentials", "claimReport" ],
+            "standard":	"Well-Tagged PDF (WTPDF): Using Tagged PDF for Accessibility and Reuse in PDF 2.0",
+            "version":	1.0,
+            "externalURI":	"https://pdfa.org/wtpdf/",
+            "level": "Conformance level for accessibility (validated)",
+            "technologyReliance": [	"ISO 32000-2", "ISO/TS 32005" ]
+        },        
+        {
+            "title": "ISO/TS 32005",
+            "description": "The author of a PDF file including this PDF Declaration is asserting that the document conforms to the ISO/TS 32005 technical specification.",
+            "uri": "http://pdfa.org/declarations#pdfua2-validated",
+            "recommendedFields": [	"claimBy", "claimDate" ],
+            "optionalFields": [ "claimCredentials", "claimReport" ],
+            "standard":	"ISO/TS 32005-2",
+            "version":	1.0,
+            "externalURI":	"https://pdfa.org/resource/ISO-32005/",
+            "technologyReliance": [	"ISO 32000-2", "ISO/TS 32005" ]
+        },
+        {
+            "title": "HIPAA",
+            "description": "The author of a PDF file including this PDF Declaration is asserting that the document does not contain information covered by <a href=\"https://www.hhs.gov/hipaa/index.html\">HIPAA</a> privacy regulations",
+            "uri": "http://pdfa.org/declarations#pdfua2-validated",
+            "recommendedFields": [	"claimBy", "claimDate" ],
+            "optionalFields": [ "claimCredentials", "claimReport" ],
+            "standard":	"HIPAA",
+            "externalURI": "https://www.hhs.gov/hipaa/",
+            "technologyReliance": [	"ISO 32000-1", "ISO 32000-2" ]
+        }
     ]
 }

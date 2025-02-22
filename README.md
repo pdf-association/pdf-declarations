@@ -1,8 +1,8 @@
-# **PDF Declarations: Display Strings**
+# **PDF Declarations: JSON definitions**
 
 This repo contains a JSON definition for all PDF Declarations recognized by the PDF Association and as published on this page: https://pdfa.org/declarations/
 
-These strings provide standardized text for use in identifying PDF Declarations in user interfaces. In each string, the key is the
+The JSON strings provide standardized text for use in identifying PDF Declarations in user interfaces. In each string, the key is the
 URI for a PDF Declaration and the value is the PDF Association's display string intended for use in software UIs.
 
 If you want to add a PDF Declaration to the PDF Association's <a href="https://pdfa.org/declarations/">

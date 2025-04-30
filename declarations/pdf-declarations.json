@@ -111,7 +111,7 @@
         {
             "title": "ISO/TS 32005",
             "description": "The author of a PDF file including this PDF Declaration is asserting that the document conforms to the ISO/TS 32005 technical specification.",
-            "uri": "http://pdfa.org/declarations#pdfua2-validated",
+            "uri": "https://pdfa.org/declarations#iso32005",
             "recommendedFields": [	"claimBy", "claimDate" ],
             "optionalFields": [ "claimCredentials", "claimReport" ],
             "standard":	"ISO/TS 32005-2",

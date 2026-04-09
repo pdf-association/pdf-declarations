@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pdfa.org/pdf-declarations/pdf-declarations.schema.json",
+  "$comment": "Copyright PDF Association",
+  "title": "PDF Declarations",
+  "description": "JSON representation of PDF Declarations (XMP metadata)",
+  "type": "object",
+  "properties": {
+    "declarationsVersion": {
+      "type": "number",
+      "description": "Version number of this JSON schema."
+    },
+    "declarations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "description": "List of individual PDF Declarations.",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Brief human-readable title of this Declaration."
+          },
+          "description": {
+            "type": "string",
+            "description": "Human-readable description of this Declaration."
+          },
+          "uri": {
+            "type":"string",
+            "format": "uri",
+            "description": "URI for this Declaration, most likely to an anchor ID on http://pdfa.org/declarations/."
+          },
+          "externalURI": {
+            "type":"string",
+            "format": "uri",
+            "description": "External URL for this Declaration, most likely to documentation."
+          },
+          "recommendedFields": {
+            "type": "array",
+            "description": "The set of recommended PDF Declarations fields to include in the XMP metadata.",
+            "maxItems": 4,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "enum": [ "claimBy", "claimDate", "claimCredentials", "claimReport" ]
+            }
+          },
+          "optionalFields": {
+            "type": "array",
+            "description": "The set of optional PDF Declarations fields to include in the XMP metadata.",
+            "maxItems": 4,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "enum": [ "claimBy", "claimDate", "claimCredentials", "claimReport" ]
+            }
+          },
+          "standard": {
+            "type":"string",
+            "description": "The document identifier for the related specification for this Declaration."
+          },
+          "version": {
+            "type": "number",
+            "description": "Version number of this Declaration."
+          },
+          "level": { 
+            "type": "string", 
+            "description": "Declarations may contain multiple levels. Brief human-readable description for a specific level for this Declaration."
+          },
+          "technologyReliance": {
+            "type": "array",
+            "minItems": 1,
+            "description": "A set of PDF specifications (e.g. ISO publication identifiers) for which this Declaration is relevant.",
+            "items": {
+              "type": "string",
+              "description": "Individual document identifiers, such as an ISO document number."
+            }
+          }
+        }
+        
+      },
+      "$comment": "The following noneOf ensures mutually exclusive sets of fields between required and optional",
+      "noneOf": [
+          {
+            "allOf": [
+              { "properties": { "recommendedFields": { "contains": { "const": "claimBy" } } } },
+              { "properties": { "optionalFields":    { "contains": { "const": "claimBy" } } } }
+            ]
+          },
+          {
+            "allOf": [
+              { "properties": { "recommendedFields": { "contains": { "const": "claimDate" } } } },
+              { "properties": { "optionalFields":    { "contains": { "const": "claimDate" } } } }
+            ]
+          },
+          {
+            "allOf": [
+              { "properties": { "recommendedFields": { "contains": { "const": "claimCredentials" } } } },
+              { "properties": { "optionalFields":    { "contains": { "const": "claimCredentials" } } } }
+            ]
+          },
+          {
+            "allOf": [
+              { "properties": { "recommendedFields": { "contains": { "const": "claimReport" } } } },
+              { "properties": { "optionalFields":    { "contains": { "const": "claimReport" } } } }
+            ]
+          }
+        ],
+      "required": [
+        "title",
+        "description",
+        "uri",
+        "recommendedFields",
+        "optionalFields",
+        "standard",
+        "version",
+        "externalURI",
+        "level",
+        "technologyReliance" 
+      ]
+    }
+  },
+  "required": [
+    "declarationsVersion",
+    "declarations"
+  ]
+}

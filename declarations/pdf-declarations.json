@@ -114,7 +114,7 @@
             "uri": "https://pdfa.org/declarations#iso32005",
             "recommendedFields": [	"claimBy", "claimDate" ],
             "optionalFields": [ "claimCredentials", "claimReport" ],
-            "standard":	"ISO/TS 32005-2",
+            "standard":	"ISO/TS 32005",
             "version":	1.0,
             "externalURI":	"https://pdfa.org/resource/ISO-32005/",
             "technologyReliance": [	"ISO 32000-2", "ISO/TS 32005" ]

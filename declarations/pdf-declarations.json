@@ -57,7 +57,7 @@
             "recommendedFields": [	"claimBy", "claimDate" ],
             "optionalFields": [ "claimCredentials", "claimReport" ],
             "standard":	"Web Content Accessibility Guidelines",
-            "version":	2.2,
+            "version":	2.1,
             "externalURI":	"https://www.w3.org/TR/WCAG21/",
             "level": "Conformance level AA",
             "technologyReliance": [	"ISO 32000" ]

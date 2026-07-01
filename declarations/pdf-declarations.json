@@ -38,6 +38,42 @@
             "level": "Conformance level for accessibility",
             "technologyReliance": [	"ISO 32000-2", "ISO/TS 32005" ]
         },
+                {
+            "title": "WCAG 2.1 Level A",
+            "description": "The author of a PDF file including this PDF Declaration is asserting that the document conforms to the WCAG 2.1 Level A specification.",
+            "uri": "http://pdfa.org/declarations#wcag21a",
+            "recommendedFields": [	"claimBy", "claimDate" ],
+            "optionalFields": [ "claimCredentials", "claimReport" ],
+            "standard":	"Web Content Accessibility Guidelines",
+            "version":	2.1,
+            "externalURI":	"https://www.w3.org/TR/WCAG21/",
+            "level": "Conformance level A",
+            "technologyReliance": [	"ISO 32000" ]
+        },
+        {
+            "title": "WCAG 2.1 Level AA",
+            "description": "The author of a PDF file including this PDF Declaration is asserting that the document conforms to the WCAG 2.1 Level AA specification.",
+            "uri": "http://pdfa.org/declarations#wcag21aa",
+            "recommendedFields": [	"claimBy", "claimDate" ],
+            "optionalFields": [ "claimCredentials", "claimReport" ],
+            "standard":	"Web Content Accessibility Guidelines",
+            "version":	2.2,
+            "externalURI":	"https://www.w3.org/TR/WCAG21/",
+            "level": "Conformance level AA",
+            "technologyReliance": [	"ISO 32000" ]
+        },        
+        {
+            "title": "WCAG 2.1 Level AAA",
+            "description": "The author of a PDF file including this PDF Declaration is asserting that the document conforms to the WCAG 2.1 Level AAA specification.",
+            "uri": "http://pdfa.org/declarations#wcag21aaa",
+            "recommendedFields": [	"claimBy", "claimDate" ],
+            "optionalFields": [ "claimCredentials", "claimReport" ],
+            "standard":	"Web Content Accessibility Guidelines",
+            "version":	2.1,
+            "externalURI":	"https://www.w3.org/TR/WCAG21/",
+            "level": "Conformance level AAA",
+            "technologyReliance": [	"ISO 32000" ]
+        },
         {
             "title": "WCAG 2.2 Level A",
             "description": "The author of a PDF file including this PDF Declaration is asserting that the document conforms to the WCAG 2.2 Level A specification.",
